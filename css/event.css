@@ -1,0 +1,88 @@
+    /* 뉴스 부분 */
+
+    .sec_4_news:hover .sec_4_news_bg{
+        transform: scale(1.1);
+    }
+
+
+    .sec_4_news:hover .video_play{
+        background-color: #1d49fb;
+    }
+
+    .letter_news:hover .letter_title{
+        color: #1d49fb;
+    }
+
+    .letter_news::before, .letter_news::after,
+    .only_line::before, .only_line::after{
+        content: '';
+        background-color: #1d49fb;
+        position: absolute;
+        transition-duration: .3s;
+    }
+    /*370px*/
+    .letter_news::before{
+        width: 0;
+        height: 10px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .letter_news::after{
+        width: 0;
+        height: 10px;
+        bottom: -10px;
+        right: -10px;
+    }
+
+    .only_line::before{
+        width: 10px;
+        height: 0;
+        bottom: -10px;
+        left: -10px;
+    }
+
+    .only_line::after{
+        width: 10px;
+        height: 0;
+        top: -10px;
+        right: -10px;
+    }
+
+    .letter_news:hover::before, .letter_news:hover::after{
+        width: 105%;
+    }.letter_news:hover .only_line::before, .letter_news:hover .only_line::after{
+        height: 105%;
+    }
+
+
+    /* 메뉴 부분 */
+    .main_menu .menu_white, .main_menu .shop,
+    .sub_con a, .sub_shop>.sub_con a{transition-duration: .2s;}
+    .main_menu .menu_white:hover{
+        border-bottom: 2px solid white;
+    }
+
+    .main_menu .shop:hover{
+        border-bottom: 2px solid #fbb700;
+    }
+
+    .sub_con:hover a{
+        border-bottom: 2px solid white;
+    }
+
+    .sub_shop>.sub_con:hover a{
+        border-bottom: 2px solid #fbb700;
+    }
+
+    .h_login:hover {
+        background-color: white;
+    }
+
+    .h_login:hover a>h3{
+        color: #fbb700;
+    }
+
+    /* sns 부분 */
+
+    .sns_box:hover .sns_con_img, .sns_con_video:hover .sns_con_img{ transform: scale(1.1); }
