@@ -58,34 +58,29 @@ $(document).ready(function(){
             }
     };
     
+    
+    $(window).stop().resize(function(){
+        ww = $(window).outerWidth();
+//        if(ww >= 1220 ){
+//            hidden_width();
+//            $('.ham').click(function(){ menu_event('.sub_menu_wrap'); });
+//            $('.header_2').css({ display: 'block', });
+//        }else if(ww < 1220){
+//            hidden_height();
+//            $('.ham').click(function(){ menu_event('.header_2'); });
+//            $('.header_2').css({ display: 'none', });
+//        }
+        location.reload();
+    });
+    
     if(ww >= 1220 ){
         hidden_width();
         $('.ham').click(function(){ menu_event('.sub_menu_wrap'); });
-        $('.sns_con_wrap').removeClass('swiper-container');
-        $('.sns_con').removeClass('swiper-wrapper');
-        $('.sns_box').removeClass('swiper-slide');
     }else if(ww < 1220){
         hidden_height();
         $('.ham').click(function(){ menu_event('.header_2'); });
     }
     
-    $(window).stop().resize(function(){
-//        ww = $(window).outerWidth();
-//        if(ww >= 1220 ){
-//            hidden_width();
-//            $('.ham').click(function(){ menu_event('.sub_menu_wrap'); });
-//            $('.sns_con_wrap').removeClass('swiper-container');
-//            $('.sns_con').removeClass('swiper-wrapper');
-//            $('.sns_box').removeClass('swiper-slide');
-//        }else if(ww < 1220){
-//            hidden_height();
-//            $('.ham').click(function(){ menu_event('.header_2'); });
-//            $('.sns_con_wrap').addClass('swiper-container');
-//            $('.sns_con').addClass('swiper-wrapper');
-//            $('.sns_box').addClass('swiper-slide');
-//        }
-        location.reload();
-    });
     
     /* 스크롤에 따른 메뉴 활성화 */
     
@@ -214,6 +209,14 @@ $(document).ready(function(){
         loop: false,
         slidesPerView: 'auto',
         spaceBetween: 50,
+        allowTouchMove: true,
+        
+        breakpoints: {
+            1219.9:{
+                allowTouchMove: false,
+            },
+        },
+        
     });
     
     
