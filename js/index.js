@@ -70,7 +70,7 @@ $(document).ready(function(){
 //            $('.ham').click(function(){ menu_event('.header_2'); });
 //            $('.header_2').css({ display: 'none', });
 //        }
-        location.reload();
+        jQuery.debounce(500,location.reload());
     });
     
     if(ww >= 1220 ){
