@@ -1,11 +1,18 @@
-# chelsea_renewal
+# 프로젝트 제목
+  - chelsea_renewal
 
 # 작업기간
   - 21.02.08 ~ 21.02.22
 
+# 개발 인원
+  - 1명 (개인 프로젝트)
+
 # 개발 언어
   - HTML5 / CSS3
   - Javascript (Jquery)
+
+# 개발 툴
+  - Brackets
 
 # 디자인 툴
   - PhotoShop
